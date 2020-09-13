@@ -10,6 +10,7 @@
 
 # production
 /build
+/functons/index
 
 # misc
 .DS_Store

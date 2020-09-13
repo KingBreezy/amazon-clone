@@ -14,7 +14,7 @@ function Home() {
         />
         <div className="home__row">
           <Product
-            id={32145}
+            id={42145}
             title="The Lean Startup"
             price={19.99}
             image="https://target.scene7.com/is/image/Target/GUEST_17861f9b-9517-4db1-8915-533b1f530fd5?wid=488&hei=488&fmt=pjpeg"
@@ -37,7 +37,7 @@ function Home() {
             rating={4}
           />
           <Product
-            id={22109}
+            id={62109}
             title="TAmazonBasics 6-Outlet, 200 Joule Surge Protector Power Strip, 2 Foot, Black - Pack of 2"
             price={12.99}
             image="https://m.media-amazon.com/images/I/81H-dmOxbBL._AC_UL320_.jpg"
@@ -46,14 +46,14 @@ function Home() {
         </div>
         <div className="home__row">
           <Product
-            id={33457}
+            id={43457}
             title="AmazonBasics 36 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
             price={10.99}
             image="https://m.media-amazon.com/images/I/71nDX36Y9UL._AC_UL320_.jpg"
             rating={4}
           />
           <Product
-            id={99087}
+            id={49087}
             title={`AmazonBasics Lightweight Super Soft Easy Care Microfiber Bed Sheet Set with 16" Deep Pockets - Queen, Dark Grey`}
             price={19.99}
             image="https://m.media-amazon.com/images/I/71ROFJE-8nL._AC_UL320_.jpg"

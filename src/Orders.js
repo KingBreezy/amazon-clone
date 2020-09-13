@@ -4,8 +4,10 @@ import Order from "./Order";
 import "./Orders.css";
 import { useStateValue } from "./StateProvider";
 function Orders() {
-  const [orders, setOrders] = useState([]);
   const [{ basket, user }, dispatch] = useStateValue();
+  const [orders, setOrders] = useState([]);
+  //const [loaded , setLoaded] = useState('')
+  console.log( `this is a user ${user?.uid}`)
   useEffect(() => {
     if (user) {
       db.collection("users")
@@ -13,24 +15,24 @@ function Orders() {
         .collection("orders")
         .orderBy("created", "desc")
         .onSnapshot((snapshot) =>
-          setOrders(
+          (setOrders(
             snapshot.docs.map((doc) => ({
               id: doc.id,
               data: doc.data(),
-            }))
+            })))
           )
         );
     } else {
       setOrders([]);
     }
-  }, []);
+  },[user] );
   return (
     <div className="orders">
       <h1>Your Orders</h1>
       <div className="order__order">
-        {orders?.map((order) => {
+        {orders?.map((order, index) => {
           return (
-            <div>
+            <div key={index}>
               {console.log(`order is ${order}`)}
               <Order order={order} />
             </div>
