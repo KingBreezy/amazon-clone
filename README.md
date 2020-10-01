@@ -1,6 +1,8 @@
-This was an Amazon Clone a made for a 5 day challenge, at the time of writing it had some bugs but i shall be repairing them in time for the mose part the core functionalities work...
+This was an Amazon Clone made for a 5 day challenge
 
-the lines below this are the default readme info when you create a react app
+At the time of writing it had some bugs but i shall be repairing them in time for the mose part the core functionalities work...
+
+The lines below this are the default readme info when you create a react app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
